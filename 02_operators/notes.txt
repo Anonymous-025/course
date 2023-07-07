@@ -1,0 +1,27 @@
+# 07-07-2023, Friday
+
+001. Arithmetic Operators
+
+    +, -, *, /, %, ** // **square
+
+002. Assignment Operators
+
+    =
+    ++, -- // for incrementing or decrementing by 1
+
+003. Comparison Operators
+
+    >, <, >=, <=, ===, !== // === equal?, !== not equal
+
+004. Logical Operators
+
+    &&, ||, ! // ! not
+
+005. Equality Operators
+
+    ===, !== // checks for data types too
+    ==, != // doesn't check for data types
+
+006. Exercise
+
+    swap 2 nos using 3rd variable
