@@ -1,0 +1,102 @@
+# 08-07-2023, Saturday
+
+001. if-else
+
+    if(condition1){
+            //statement
+    }
+    else if(condition2)
+    {
+            //statement
+    }
+    else{
+            //statement
+    }
+
+
+002. switch-case
+
+    switch(varName){    //true 
+        case varValue1: //condition1
+        statement1
+        break
+
+        case varValue2: //condition2
+        statement2
+        break
+    }
+
+ 003. ternary Operator
+
+        let varName = condition ? statement1 : statement2
+
+004. Exercise
+
+        if it is divisible by 3/5 or both
+        let num1 = 17
+        if (num1 % 3 === 0 && num1 % 5 === 0) {
+        console.log('fuzzbuzz')
+        } else if (num1 % 3 === 0) {
+        console.log('fuzz')
+        } else if (num1 % 5 === 0) {
+        console.log('buzz')
+        } else console.log('nothing')
+
+005. Exercise
+
+        Using ternary Operator
+        let num1 = 15
+        console.log(
+                num1 % 3 === 0 && num1 % 5 === 0
+                ? 'fuzzbuzz'
+                : num1 % 3 === 0
+                ? 'fuzz'
+                : num1 % 5 === 0
+                ? 'buzz'
+                : 'nothing'
+                )
+
+006. Exercise
+
+        Grading system    
+        80-100 'A+'
+        70-79 'A'
+        60-69 'A-'
+        50-59 'B'
+        40-49 'C' 
+        33-39 'D' 
+        0-32 'F'  
+        else 'invalid mark'
+
+        let mark = 32
+        if (mark >= 80 && mark <= 100) {
+                console.log('A+')
+        } else if (mark >= 70 && mark <= 79) {
+                console.log('A')
+        } else if (mark >= 60 && mark <= 69) {
+                console.log('A-')
+        } else if (mark >= 50 && mark <= 59) {
+                console.log('B')
+        } else if (mark >= 40 && mark <= 49) {
+                console.log('C')
+        } else if (mark >= 33 && mark <= 39) {
+                console.log('D')
+        } else if (mark >= 0 && mark <= 32) {
+                console.log('F')
+        } else console.log('invalid marks')
+        
+007. Exercise
+        +ve, 0,-ve number using switch-case
+        
+        let numb = -1
+        switch (true) {                 //see true here
+        case numb > 0:
+        console.log('This is a positive number')
+        break
+        case numb === 0:
+        console.log('This is a zero')
+        break
+        case numb < 0:
+        console.log('This is a negative number')
+        break
+        }
