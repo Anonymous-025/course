@@ -1,0 +1,103 @@
+# 08-07-2023, Saturday
+
+001. Object
+
+    Many properties and methods stored to a variable
+    Eg. const user {
+        name : 'Anonymous', 
+        age: 25 , 
+    };
+
+    console.log (user) //displays everything in object
+    console.log (user.name) //just name
+    console.log (user['name']) // just name method 2
+
+
+002. object manipulation
+    
+    add
+    user.name = 'name' //adds name to properties of object
+
+    update
+    user['1phone'] =90978989  // update method 2, we can use numbers, space etc when using bracket method
+    
+    delete
+    delte user.name
+
+003. object method and 'this' keyword
+
+    const objName = {
+    name: 'something',
+    age: 40,
+    methodName: function () {   //declard method in object
+        console.log(`my age is ${this.age}`) //this is used to acces variable in object in methods
+        },
+    }
+
+    objName.methodName()
+
+004. traversing object
+
+    Object.keys(objName) //list property names of object , another way  for-in
+    Object.values(objName) //list values of property of object ,another way for-of
+
+005. Exercise
+
+    //To get sum of salary of 5 persons in object
+    const salary = {
+    raju: 2000,
+    rovin: 3000,
+    rahul: 4000,
+    }
+    let totSalary = 0
+    for (let value in salary) {
+    totSalary += salary[value]
+    }
+    console.log(totSalary)
+
+006. object destructuring
+
+    when access object values when object have objects within, then it becomes lenghtier to call the values hence destructuring
+    const {pprty1, pprty2, pprty3} =objName
+    Eg. const user = {
+        name : 'something',
+        age : 20,
+        favBook : {
+            bookName : 'Percy Jackson',
+            bookAuthor : 'Rick Riordan',
+         },
+        };  
+    const {name, age, favBook} =user
+    const {bookName, bookAuthor} = favBook
+
+    console.log(name)
+    console.log(bookName)
+
+007. cloning object
+
+    const objName2 = Object.assign({},objName1) //method 1
+
+    const objName2 = {}
+    objName2.pprty1 = objName1.pprty1   //method 2
+
+    for (let key in objName) {
+        objName2[key]= objName1[key]    //method 3
+    }
+
+008. Math object
+
+    there are a ton of math ojects . research for more more
+    Eg. Math.PI //returns pi value
+        Math.random() //returns a random value
+        Math.round(3.6) // 4
+        Math.pow(x,y) //x ^ y
+        Math.sqrt(x)
+
+009. JSON data format
+
+    more like Object format with quotes "" for properties without any methods  {"name" : "Anonymous"}
+
+    JSON.stringify(objName) //convert obj to JSON file format
+    JSON.parse(jsonName) //converts JSON to object format
+
+
