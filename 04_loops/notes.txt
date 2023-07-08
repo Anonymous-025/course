@@ -1,0 +1,54 @@
+# 08-07-2023, Saturday
+
+001. for loop
+
+        for(let i=0;i<n;i++){
+                statement
+        }
+
+002. while loop
+
+        let varName =0 //initialize outside loop
+        while(condition){
+                statement
+                alteration //i++
+        }
+003. DO while loop
+
+        executes before checking condition
+
+        do {
+                statement 
+        }while(condition)
+
+004. for in loop
+
+        for( let varName in objName ){         //can be used for array too  
+        console.log(varName)  //will display obj properties or arr index
+        console.log(varName,objName[varName])} //will display obj property and  Value
+
+005. for of loop
+
+        for(let varName of objName){
+                console.log(varName) //will display obj property Value
+        }
+
+006. break & continue
+
+        break //to break of out off  loop
+        continue //can be used to skip a loop 
+        Eg      for(let i=0;i<10;i++) {
+                        if(i===5){
+                                continue        //this skips loop fo i=5
+                        }
+                }
+
+007. infinty loop
+
+        for(let i=0; ; i++){
+                //infnity loop
+        }
+
+008. nested loops
+
+        loops within a loop
