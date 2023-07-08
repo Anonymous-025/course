@@ -1,0 +1,60 @@
+# 08-07-2023, Saturday
+
+001. String
+        let strName = 'India'
+        strName.chartAt(3) //chartAt is used to get character at that position starting at 0 index, [8] - empty array
+        strName[3] //can also be used ,if [8] -undefined
+
+002. string methods
+
+        case-sensitive
+
+        strName.charAt() //it display charat given position
+        strName.includes('something') // to check if the value is present in string
+        strName.toUpperCase() //to change all characters to UPPER CASE
+        strName.toLowerCase()   // to change all characters to lower case
+        strName.startsWith('something')   // to see if string starts with given value
+        strName.endsWith('something')   // to see if string ends with given value 
+
+003. string methods
+
+        strName.search('hi') // to see the index of given value, provides Ist index if repeated values are present
+        strName.indexOf('hi') // to see the index of given value method 2,
+        strName.lastIndexOf('hi') // to see the index of last index of the given value
+
+004. string methods
+
+        strName.toString() //to covert into string....array too can be convereted
+        strName.concat(strName2) 
+        Eg.     let m1 = 'hello '
+                let m2 = 'hi '
+                let m3 = 'hello'
+                let m = m1.concat(m2, m3) // m = m1+m2+m3 can be joined using + method 2
+                console.log(m)
+
+              
+
+        strName.Split(' ') //to split by space 
+
+005. string method
+
+        The substring() method swaps its two arguments if indexStart is greater than indexEnd , 
+                meaning that a string is still returned. 
+        The slice() method returns an empty string if this is the case.
+
+        let strName = 'hello world'
+        strName.slice(2) //  starting index and ending index ,is only given starts from after slicing till index llo world
+        strName.substring(0, 5) // starting index and ending index, hello
+        strName.substr(0, 1) //starting index and length, h
+        strName.substr(-11, 8) //starts from right to left
+
+006. escape sequences
+
+        \ - to print quotes in quotes " it\'s a nice day'
+        \\ - to print \
+        \t - tab
+        \n - enter
+
+007. string immutability
+        a string needs to be reassigned to change value can't do strName[0] ='H'
+        strName ='hello'
