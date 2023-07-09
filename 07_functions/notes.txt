@@ -1,0 +1,43 @@
+# 09-07-2023, Sunday
+
+001. function
+
+    function FuncName(arg1, arg2) {
+        statements
+        return varName // if needed
+    }
+
+    let varName = FuncName(arg1,arg2) //let varName = if needed
+
+002. default parameter
+
+    function FuncName(arg1 = 10, arg2) // default parameter, used if no parameter is passed
+
+003. function expression
+
+    const FuncName = function (arg1, arg2) {    // function method 2
+        let sum = arg1 + arg2   
+        return sum
+        }
+
+    console.log(FuncName(10, 30))   //can't console before initialization of function, but normal function initialization can
+
+004. arrow function
+
+    const ArrFuncName = (arg1, arg2) => statement 
+    Eg.
+    const ArrFuncName = (num1,num2) => num1+num2 // the num1 + num2 is returned to ArrFuncName
+
+005. rest function
+
+    if there are too many arguements to pass to a function rest function can be used
+    function FuncName(...args) //  ...args is an array
+    Eg. let sum = 0
+        const FuncName = (...args) => {
+        for (let i of args) {
+            sum += i
+        }
+        return sum
+        }
+
+        console.log(FuncName(1, 2, 3, 4, 5))
