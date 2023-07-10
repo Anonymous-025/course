@@ -1,0 +1,131 @@
+# 10-07-2023, Monday
+
+001. arrays
+
+    arrays start from 0 index
+    
+    const arrName = ['value1', 'value2']
+    arrName[0]      // to get Ist value
+    arrName.length      // displays the no of values in array
+
+002. array manipulation (adding)
+
+    const arrName = [1, 2, 3, 4, 5]
+
+    arrName.unshift(0,2,3) // adds values to the start,  array becomes 0,2,3,1,2..
+    arrName.push(6,7) // add values to the last , array becomes .....,4,5,6,7
+    arrName.splice(arrIndex,dlt,2,3) // dlt- how many of them should be deleted from the array index, 
+    Eg. arrName.splice(1,0,7,8) // 1,7,8,2,3,4,5
+
+003. array manipulation (removing)
+
+    arrName.shift() // remove a element from the start, run multiple times to remove more
+    arrName.pop() // remove a  element from the last , run multiple times to remove more
+    arrName.splice(arrIndex,dlt) // dlt- how many of them should be deleted from the array index
+
+004. searching element
+
+    arrName.includes(2) // look for 2 in array
+    arrName.includes(2, 3) // look for 2 in array after 3rd index
+    arrName.indexOf(2) // look for Ist index of 2 
+    arrName.lastIndexOf(2) // look for last index of 2
+    
+005. finding object in array
+
+    Eg. const arrName = [{ obj1: 'value1', obj2: 'value2', obj3: 'value3' }]
+        const result = arrName.find(function (objName) {
+        return (objName.obj1 = 'value2')
+        })
+
+006. iterating in array
+
+    arrName.forEach(function(varName, i){
+        console.log(varName)    // displays all elements of array0
+    })
+
+007. sorting & reversing
+
+    arrName.sort()  // ascending order
+    arrName.reverse()   // reversing,
+
+    if both sort() & reverse() are used ,then can be sorted in descending order
+
+    in objects in array
+    Eg.const arrName = [
+        { pprt1: 'Name1', pprt11: 5 },
+        { pprt2: 'Name2', prty22: 20 },]
+        arrName
+        .sort(function (varName1, varName2) {
+            if (varName1.pprt11 > varName2.pprty22) {
+            return 1
+            }
+            if (varName1.pprt11 === varName2.pprty22) {
+            return 0
+            }
+            if (varName1.pprt11 < VarName2.pprty22) {
+            return -1
+            }
+        })
+        .reverse()      // in descending order
+        console.log(arrName)  //displays in descending order
+
+
+008. array methods
+
+    every() //all the array element should obey to be true
+    Eg. const arrName = [1, 242, 2, -42, 4]
+        console.log(
+        arrName.every(function (num) {
+            return num > 0
+        })          
+        )           //displays false 
+
+    some()  //if any one array element obeys true
+    Eg. const arrName = [1, 242, 2, -42, 4]
+        console.log(
+        arrName.some(function (num) {
+            return num > 0
+        })          
+        )           //displays true 
+
+
+009. array methods
+
+    concat() 
+    Eg. const varName = arrName1.concat(arrName2)
+    
+    slice()
+    Eg. const varName = arrName.slice(strtIndex, endIndex)  // get a slice of  elements from start index and end index
+
+
+010. spread operator
+
+    can be used to get elements, concat, cloning, etc
+
+        console.log(...arrName) // displys all elements of array
+        const arrNameCopy = [...arrName] // cloning of array 
+        const arrName2 = [..arrName, ...arrNameCopy]    // concate arrays
+
+011. joining array
+
+    arrName.join()  // to convert into string
+    arrName.join('-')   // to convert into string seperated by -
+
+    strName.split(' ')  // to convert into array split at ' 'space
+
+012. ES6 feature : map
+
+    Eg.  arrName.map((varName) => varName * 2)   // array elements gets multiplied by 2
+
+
+013. ES6 feature : filtering
+
+    arrName.filter(function(varName){
+        return condition // condition to filter elements
+    })
+
+014. ES6 feature : array reduce
+
+    arrName.reduce(function (sum, varName) {
+        sum + varName //  get sum of all the elements
+    },0)    //initial value
