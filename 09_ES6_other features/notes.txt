@@ -1,0 +1,77 @@
+# 12-07-2023, Wednesday
+
+001. array destructoring
+
+    arrName[a,b,c] = arrName2[1,2,3]
+
+002. data structure : set  
+
+    let set = new Set()
+    set.add(100) // adds 100 to set
+    set.delete(100)  // delete 100 from set
+    set.clear() // clear set
+    set.size // get size of set
+    set.forEach((varName) => console.log(varName)) //displays all elements of set
+
+    set can't have repeated values
+
+
+003. data structure : map
+
+    let map = new Map()
+    map.has('value')   // look if value is present or not in map 
+    map.delete('value') // delete value from map
+    console.log(map.values())   // displays all values
+    console.log(map.keys())   // displays all keys
+    mop.clear() // removes all data
+
+
+004. weak set & weak map
+
+    let ws = new WeakSet()  // only objects are supported
+    const objName1 = {}
+    const objName2 = {}
+    ws.has(objName1)    // look objName1 is present or not
+    ws.delete(objName2) //delete objName2 
+
+    let wm = new WeakMap()  // only objects are supported
+    const objName1 = {}
+    const objName2 = {}
+    wm.has(objName1)    // look objName1 is present or not
+    wm.delete(objName2) //delete objName2 
+    wm.get(objName1)    //value of objName
+
+
+005. module export import
+
+    main.js
+    import funcName() from './file.js'
+
+    file.js
+    funcName()  //function statements
+    export default funcName()
+
+    in index.html make <script type= "module" 
+
+
+006. padStart() , padEnd(), trimStart(), trimEnd()
+
+    varName.padStart(maxlength, value)
+    Eg. let num1 = '1'
+        num1.padStart(3,5)  // 551,  adds 55 to start 
+        num1.padStart(3)  //  '  1',  adds '  ' to start 
+    
+    varName.padEnd(maxlength, value)
+    Eg. let num1 = '1'
+        num1.padStart(3,5)  // 155,  adds 55 to End 
+
+    varName.trim() //trims space
+    varName.trimStart() //trims space from start 
+    varName.trimEnd() //trims space from end
+
+         
+
+    
+
+
+
